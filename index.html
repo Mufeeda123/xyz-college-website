@@ -69,22 +69,63 @@
   </header>
 
   <!-- HERO SECTION -->
-  <section id="home" class="relative h-screen bg-cover bg-center flex flex-col justify-center items-center text-white text-center" style="background-image: url('images/hero.jpg')">
-    <div class="absolute inset-0 bg-black/50"></div>
-    <div class="relative z-10">
-      <h1 class="text-5xl font-bold mb-4 drop-shadow-lg">Welcome to XYZ College</h1>
-      <p class="text-xl mb-6">Empowering Education for a Better Future</p>
-      <a href="#about" class="bg-red-800 text-white px-6 py-3 rounded font-semibold hover:bg-blue-100 transition">Learn More</a>
-    </div>
+<section id="home" 
+  class="relative h-[calc(100vh-20px)] md:h-screen bg-cover bg-center flex flex-col justify-center items-center text-white text-center px-4"
+  style="background-image: url('images/hero.jpg')">
+
+  <!-- Dark gradient overlay -->
+  <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/50"></div>
+
+  <!-- Soft glow background -->
+  <div class="absolute inset-0 flex justify-center items-center">
+    <div class="w-72 h-72 bg-white/10 blur-3xl rounded-full"></div>
+  </div>
+
+  <div class="relative z-10 max-w-2xl">
+
+    <!-- Elegant "Welcome To" -->
+    <p class="text-sm md:text-base tracking-[0.3em] uppercase text-gray-100 mb-2">
+      Welcome To
+    </p>
+
+    <!-- Stylish XYZ College -->
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">
+      <span class="text-white drop-shadow-lg">XYZ College</span>
+    
+    </h1>
+
+    <!-- Updated empowering line -->
+    <p class="text-base md:text-xl text-gray-200 mb-8 leading-relaxed">
+      <span class="border-l-4 border-red-500 pl-3">
+        Empowering Education for a Brighter Tomorrow
+      </span>
+    </p>
+
+    <!-- Stylish modern button -->
+    <a href="#about"
+      class="px-10 py-3 rounded-full font-semibold text-white 
+             bg-gradient-to-r from-red-600 to-red-700 
+             hover:from-red-700 hover:to-red-800 
+             shadow-lg hover:shadow-xl 
+             transition-all duration-300">
+      Learn More
+    </a>
+
+  </div>
+
+</section>
+
+
+
+</section>
 
     <!-- Scroll Down -->
-    <div id="scroll-arrow" class="absolute bottom-16 left-1/2 -translate-x-1/2 flex flex-col items-center cursor-pointer z-50">
-      <div class="w-14 h-14 rounded-full border-2 border-white flex items-center justify-center animate-bounce hover:bg-red-800 transition-colors">
+    <div id="scroll-arrow" class="absolute bottom-14 inset-x-0 mx-auto -translate-x-1/2 flex flex-col items-center cursor-pointer z-50">
+      <div class="w-14 h-14 rounded-full border-2 border-white flex  items-center justify-center animate-bounce hover:bg-red-800 transition-colors">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 40" stroke="currentColor" stroke-width="2" class="w-4 h-10 text-white">
           <path stroke-linecap="round" stroke-linejoin="round" d="M12 0v30m0 0l-6-6m6 6l6-6"/>
         </svg>
       </div>
-      <p class="text-white text-sm mt-2 opacity-80 tracking-wider">Scroll Down</p>
     </div>
   </section>
 
@@ -130,7 +171,11 @@
   <section id="admissions" class="py-16 px-6 md:px-16 bg-blue-100 text-center">
     <h2 class="text-3xl font-bold mb-6 text-red-800">Admissions</h2>
     <p class="text-lg mb-6">Admissions are open for 2025! Take your first step toward a bright future at XYZ College.</p>
-    <a href="#contact" class="bg-red-700 text-white px-6 py-2 rounded hover:bg-red-800 transition">Apply Now</a>
+    <a href="#contact" class="px-10 py-3 rounded-full font-semibold text-white 
+             bg-gradient-to-r from-red-600 to-red-700 
+             hover:from-red-700 hover:to-red-800 
+             shadow-lg hover:shadow-xl 
+             transition-all duration-300"">Apply Now</a>
   </section>
 
   <!-- CONTACT SECTION -->
@@ -145,7 +190,11 @@
       <span id="phoneError" class="text-red-500 text-sm"></span>
       <textarea id="message" rows="4" placeholder="Your Message" class="w-full border p-3 rounded mb-4"></textarea>
       <span id="messageError" class="text-red-500 text-sm"></span>
-      <button type="submit" class="bg-red-700 text-white px-6 py-2 rounded hover:bg-red-800 transition">Submit</button>
+      <button type="submit" class="px-10 py-3 rounded-full font-semibold text-white 
+             bg-gradient-to-r from-red-600 to-red-700 
+             hover:from-red-700 hover:to-red-800 
+             shadow-lg hover:shadow-xl 
+             transition-all duration-300">Submit</button>
     </form>
     <div id="successMessage" class="hidden text-green-600 mt-3">Thank you! Your message has been sent.</div>
   </section>
