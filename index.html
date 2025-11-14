@@ -1,39 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>XYZ College - Empowering Education for a Better Future</title>
-  <link rel="icon" type="image/png" href="images/logo.png" />
-
+  <link rel="icon" type="image/png" href="images/logo.jpg" />
   <!-- AOS Animation CSS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-
   <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css" />
-
 </head>
 <body class="font-[Poppins] text-gray-800 scroll-smooth">
 
   <!-- HEADER -->
   <header class="flex justify-between items-center bg-red-700 text-white px-4 py-2 sticky top-0 shadow-md z-50">
     <div class="flex items-center">
-      <img src="images/logo.png" alt="XYZ College Logo" class="h-20 w-auto mr-3"/>
+      <img src="images/logo.jpg" alt="XYZ College Logo" class="h-20 w-auto mr-3" />
       <h1>
-        <span class="text-3xl font-bold tracking-wide">XYZ</span><br/>
+        <span class="text-3xl font-bold tracking-wide">XYZ</span><br />
         <span class="text-lg font-normal tracking-wide">College</span>
       </h1>
     </div>
-
     <nav class="flex items-center justify-between px-6 py-4 relative z-50">
       <!-- Desktop Menu -->
       <ul class="hidden lg:flex text-xl space-x-10 pr-40">
@@ -43,20 +37,21 @@
         <li><a href="#admissions" class="hover:underline">Admissions</a></li>
         <li><a href="#contact" class="hover:underline">Contact</a></li>
       </ul>
-
       <!-- Hamburger -->
       <div class="lg:hidden flex items-center">
-        <button id="menu-btn" class="fixed top-4 right-4 z-50 p-2 rounded-md focus:outline-none text-white shadow-lg lg:hidden">
+        <button id="menu-btn"
+          class="fixed top-4 right-4 z-50 p-2 rounded-md focus:outline-none text-white shadow-lg lg:hidden">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
       </div>
     </nav>
-
     <!-- Sidebar -->
-    <div id="sidebar" class="fixed top-0 right-0 h-full w-72 bg-white text-gray-800 shadow-2xl rounded-l-xl transform translate-x-full transition-transform duration-300 z-50 lg:hidden overflow-y-auto">
-      <button id="close-btn" class="absolute top-4 right-4 text-gray-800 text-2xl hover:text-red-600 transition-colors">&times;</button>
+    <div id="sidebar"
+      class="fixed top-0 right-0 h-full w-72 bg-white text-gray-800 shadow-2xl rounded-l-xl transform translate-x-full transition-transform duration-300 z-50 lg:hidden overflow-y-auto">
+      <button id="close-btn"
+        class="absolute top-4 right-4 text-gray-800 text-2xl hover:text-red-600 transition-colors">&times;</button>
       <ul class="flex flex-col mt-20 space-y-6 text-lg px-8">
         <li><a href="#home" class="hover:text-red-600 transition-colors">Home</a></li>
         <li><a href="#about" class="hover:text-red-600 transition-colors">About</a></li>
@@ -67,161 +62,117 @@
     </div>
     <div id="overlay" class="fixed inset-0 bg-black bg-opacity-40 hidden z-40 lg:hidden"></div>
   </header>
-
   <!-- HERO SECTION -->
-<section id="home" 
-  class="relative h-[calc(100vh-20px)] md:h-screen bg-cover bg-center flex flex-col justify-center items-center text-white text-center px-4"
-  style="background-image: url('images/hero.jpg')">
-
-  <!-- Dark gradient overlay -->
-  <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/50"></div>
-
-  <!-- Soft glow background -->
-  <div class="absolute inset-0 flex justify-center items-center">
-    <div class="w-72 h-72 bg-white/10 blur-3xl rounded-full"></div>
-  </div>
-
-  <div class="relative z-10 max-w-2xl">
-
-    <!-- Elegant "Welcome To" -->
-    <p class="text-sm md:text-base tracking-[0.3em] uppercase text-gray-100 mb-2">
-      Welcome To
-    </p>
-
-    <!-- Stylish XYZ College -->
-    <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">
-      <span class="text-white drop-shadow-lg">XYZ College</span>
-    
-    </h1>
-
-    <!-- Updated empowering line -->
-    <p class="text-base md:text-xl text-gray-200 mb-8 leading-relaxed">
-      <span class="border-l-4 border-red-500 pl-3">
-        Empowering Education for a Brighter Tomorrow
-      </span>
-    </p>
-
-    <!-- Stylish modern button -->
-    <a href="#about"
-      class="px-10 py-3 rounded-full font-semibold text-white 
-             bg-gradient-to-r from-red-600 to-red-700 
-             hover:from-red-700 hover:to-red-800 
-             shadow-lg hover:shadow-xl 
-             transition-all duration-300">
-      Learn More
-    </a>
-
-  </div>
-
-</section>
-
-
-
-</section>
-
-    <!-- Scroll Down -->
-    <div id="scroll-arrow" class="absolute bottom-14 inset-x-0 mx-auto -translate-x-1/2 flex flex-col items-center cursor-pointer z-50">
-      <div class="w-14 h-14 rounded-full border-2 border-white flex  items-center justify-center animate-bounce hover:bg-red-800 transition-colors">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 40" stroke="currentColor" stroke-width="2" class="w-4 h-10 text-white">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M12 0v30m0 0l-6-6m6 6l6-6"/>
-        </svg>
-      </div>
+  <section id="home"
+    class="relative h-[calc(100vh-20px)] md:h-screen bg-cover bg-center flex flex-col justify-center items-center text-white text-center px-4"
+    style="background-image: url('images/hero.jpg')">
+    <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/50"></div>
+    <div class="absolute inset-0 flex justify-center items-center">
+      <div class="w-72 h-72 bg-white/10 blur-3xl rounded-full"></div>
+    </div>
+    <div class="relative z-10 max-w-2xl">
+      <p class="text-sm md:text-base tracking-[0.3em] uppercase text-gray-100 mb-2">
+        Welcome To
+      </p>
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">
+        <span class="text-white drop-shadow-lg">XYZ College</span>
+      </h1>
+      <p class="text-base md:text-xl text-gray-200 mb-8 leading-relaxed">
+        <span class="border-l-4 border-red-500 pl-3">
+          Empowering Education for a Brighter Tomorrow
+        </span>
+      </p>
+      <a href="#about" class="px-10 py-3 rounded-full font-semibold text-white bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 shadow-lg hover:shadow-xl transition-all duration-300">Learn More</a>
     </div>
   </section>
-
+  <!-- Scroll Down -->
+  <div id="scroll-arrow"
+    class="absolute bottom-14 inset-x-0 mx-auto -translate-x-1/2 flex flex-col items-center cursor-pointer z-50">
+    <div
+      class="w-14 h-14 rounded-full border-2 border-white flex  items-center justify-center animate-bounce hover:bg-red-800 transition-colors">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 40" stroke="currentColor" stroke-width="2"
+        class="w-4 h-10 text-white">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 0v30m0 0l-6-6m6 6l6-6" />
+      </svg>
+    </div>
+  </div>
+  </section>
   <!-- ABOUT SECTION -->
-  <section id="about" class="relative bg-white rounded-t-3xl shadow-lg py-24 px-6 md:px-16 -mt-36 z-10 transform translate-y-16 opacity-0 transition-all duration-700 ease-in-out" data-aos="fade-up">
+  <section id="about"
+    class="relative bg-white rounded-t-3xl shadow-lg py-24 px-6 md:px-16 -mt-36 z-10 transform translate-y-16 opacity-0 transition-all duration-700 ease-in-out"
+    data-aos="fade-up">
     <div class="max-w-5xl mx-auto text-center">
       <h2 class="text-3xl font-bold text-red-700 mb-6">About Us</h2>
       <p class="text-gray-700 text-lg leading-relaxed mb-6">
-        XYZ College is dedicated to providing quality education and fostering innovation, creativity, and personal growth. Our institution offers a vibrant campus life, excellent faculty, and modern learning facilities to empower students for a brighter future.
+        XYZ College is dedicated to providing quality education and fostering innovation, creativity, and personal
+        growth. Our institution offers a vibrant campus life, excellent faculty, and modern learning facilities to
+        empower students for a brighter future.
       </p>
-      <img src="images/about.jpg" alt="About XYZ College" class="rounded-lg mx-auto shadow-md hover:scale-105 transition-transform duration-500 w-full md:w-3/4"/>
+      <img src="images/about.jpg" alt="About XYZ College"
+        class="rounded-lg mx-auto shadow-md hover:scale-105 transition-transform duration-500 w-full md:w-3/4" />
     </div>
   </section>
-
   <!-- COURSES SECTION -->
   <section id="courses" class="py-16 px-6 md:px-16 bg-white">
     <h2 class="text-3xl font-bold text-center mb-10 text-red-700">Top Courses</h2>
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
       <div class="bg-blue-50 rounded-lg shadow-md hover:shadow-xl transition p-4 hover:scale-105">
-        <img src="images/course1.jpg" alt="B.Sc Computer Science" loading="lazy" class="rounded-md mb-4"/>
+        <img src="images/course1.jpg" alt="B.Sc Computer Science" loading="lazy" class="rounded-md mb-4" />
         <h3 class="font-semibold text-xl mb-2 text-red-800">B.Sc Computer Science</h3>
         <p>Master programming, algorithms, and software development with hands-on experience.</p>
       </div>
       <div class="bg-blue-50 rounded-lg shadow-md hover:shadow-xl transition p-4 hover:scale-105">
-        <img src="images/course2.jpg" alt="BBA" loading="lazy" class="rounded-md mb-4"/>
+        <img src="images/course2.jpg" alt="BBA" loading="lazy" class="rounded-md mb-4" />
         <h3 class="font-semibold text-xl mb-2 text-red-800">BBA</h3>
         <p>Build leadership and entrepreneurial skills for success in business and management.</p>
       </div>
       <div class="bg-blue-50 rounded-lg shadow-md hover:shadow-xl transition p-4 hover:scale-105">
-        <img src="images/course3.jpg" alt="BA English" loading="lazy" class="rounded-md mb-4"/>
+        <img src="images/course3.jpg" alt="BA English" loading="lazy" class="rounded-md mb-4" />
         <h3 class="font-semibold text-xl mb-2 text-red-800">BA English</h3>
         <p>Explore literature, communication, and media studies to enhance your creative expression.</p>
       </div>
       <div class="bg-blue-50 rounded-lg shadow-md hover:shadow-xl transition p-4 hover:scale-105 lg:col-start-2">
-        <img src="images/course4.jpg" alt="B.Sc Psychology" loading="lazy" class="rounded-md mb-4"/>
+        <img src="images/course4.jpg" alt="B.Sc Psychology" loading="lazy" class="rounded-md mb-4" />
         <h3 class="font-semibold text-xl mb-2 text-red-800">B.Sc Psychology</h3>
-        <p>Explore the science of the human mind and behavior. Learn about emotions, perception, and mental health to make a positive impact in society.</p>
+        <p>Explore the science of the human mind and behavior. Learn about emotions, perception, and mental health to
+          make a positive impact in society.</p>
       </div>
     </div>
   </section>
-
   <!-- ADMISSIONS SECTION -->
   <section id="admissions" class="py-16 px-6 md:px-16 bg-blue-100 text-center">
     <h2 class="text-3xl font-bold mb-6 text-red-800">Admissions</h2>
     <p class="text-lg mb-6">Admissions are open for 2025! Take your first step toward a bright future at XYZ College.</p>
-    <a href="#contact" class="px-10 py-3 rounded-full font-semibold text-white 
-             bg-gradient-to-r from-red-600 to-red-700 
-             hover:from-red-700 hover:to-red-800 
-             shadow-lg hover:shadow-xl 
-             transition-all duration-300"">Apply Now</a>
+    <a href="#contact" class="px-10 py-3 rounded-full font-semibold text-white bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 shadow-lg hover:shadow-xl transition-all duration-300"">Apply Now</a>
   </section>
-
   <!-- CONTACT SECTION -->
   <section id="contact" class="py-16 px-6 md:px-16 bg-gray-100">
-    <h2 class="text-3xl font-bold text-center mb-10 text-red-700">Contact Us</h2>
-    <form id="contactForm" class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-lg relative">
-      <input type="text" id="name" placeholder="Your Name" class="w-full border p-3 rounded mb-4"/>
-      <span id="nameError" class="text-red-500 text-sm"></span>
-      <input type="email" id="email" placeholder="Your Email" class="w-full border p-3 rounded mb-4"/>
-      <span id="emailError" class="text-red-500 text-sm"></span>
-      <input type="text" id="phone" name="phone" placeholder="Your Phone" class="w-full border p-3 rounded mb-4"/>
-      <span id="phoneError" class="text-red-500 text-sm"></span>
-      <textarea id="message" rows="4" placeholder="Your Message" class="w-full border p-3 rounded mb-4"></textarea>
-      <span id="messageError" class="text-red-500 text-sm"></span>
-      <button type="submit" class="px-10 py-3 rounded-full font-semibold text-white 
-             bg-gradient-to-r from-red-600 to-red-700 
-             hover:from-red-700 hover:to-red-800 
-             shadow-lg hover:shadow-xl 
-             transition-all duration-300">Submit</button>
-    </form>
-    <div id="successMessage" class="hidden text-green-600 mt-3">Thank you! Your message has been sent.</div>
+  <h2 class="text-3xl font-bold text-center mb-10 text-red-700">Contact Us</h2>
+  <form id="contactForm" class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-lg relative">
+  <input type="text" id="name" placeholder="Your Name" class="w-full border p-3 rounded mb-4"/>
+  <input type="email" id="email" placeholder="Your Email" class="w-full border p-3 rounded mb-4"/>
+  <input type="text" id="phone" placeholder="Your Phone" class="w-full border p-3 rounded mb-4"/>
+  <textarea id="message" rows="4" placeholder="Your Message" class="w-full border p-3 rounded mb-4"></textarea>
+  <button type="submit" class="px-10 py-3 rounded-full font-semibold text-white bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 shadow-lg hover:shadow-xl transition-all duration-300">Submit</button>
+  </form>
+  <div id="successMessage" class="hidden text-green-600 mt-3">Thank you! Your message has been sent.</div>
   </section>
-
   <!-- FOOTER -->
-  <footer class="bg-red-900 text-white text-center py-6">
-    <p>
-      <a href="https://www.google.com/maps/place/Kochi,+Kerala" target="_blank" class="hover:underline">XYZ College, Kochi, Kerala</a> | 
-      <a href="tel:9876543210" class="hover:underline">📞 9876543210</a> | 
-      <a href="mailto:info@xyzcollege.com" class="hover:underline">✉️ info@xyzcollege.com</a>
-    </p>
+<footer class="bg-red-900 text-white text-center py-6">
+  <p>
+    <a href="https://www.google.com/maps/place/Kochi,+Kerala" target="_blank" class="hover:underline">
+      XYZ College, Kochi, Kerala
+    </a> |
+    <a href="tel:9876543210" class="hover:underline">📞 9876543210</a> |
+    <a href="mailto:info@xyzcollege.com" class="hover:underline">✉️ info@xyzcollege.com</a>
+  </p>
     <div class="mt-3">
-      <a href="#" class="mx-2 hover:text-pink-500"><i class="fab fa-facebook"></i></a>
-      <a href="#" class="mx-2 hover:text-pink-500"><i class="fab fa-instagram"></i></a>
-      <a href="#" class="mx-2 hover:text-pink-700"><i class="fab fa-linkedin"></i></a>
+    <a href="#" class="mx-2 hover:text-pink-500"><i class="fab fa-facebook"></i></a>
+    <a href="#" class="mx-2 hover:text-pink-500"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="mx-2 hover:text-pink-700"><i class="fab fa-linkedin"></i></a>
     </div>
-    <p class="mt-3 text-sm">Designed by Fathima Mufeeda K © 2025</p>
+  <p class="mt-3 text-sm">Designed by Fathima Mufeeda K © 2025</p>
   </footer>
-
-  <!-- Modal -->
-  <div id="successModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
-    <div class="bg-white rounded-lg shadow-lg p-6 max-w-sm text-center relative">
-      <span id="closeModal" class="absolute top-2 right-3 text-gray-500 cursor-pointer text-xl">&times;</span>
-      <h2 class="text-2xl font-bold mb-2 text-green-600">Good job!</h2>
-      <p>Form submitted successfully!</p>
-    </div>
-  </div>
 
   <!-- JS -->
   <script src="script.js"></script>
@@ -230,4 +181,5 @@
     AOS.init({ duration: 1000, once: true });
   </script>
 </body>
+
 </html>
